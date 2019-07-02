@@ -8,6 +8,7 @@
     <RepositoryUrl>https://github.com/marthurIntersys/HttpClientMock</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

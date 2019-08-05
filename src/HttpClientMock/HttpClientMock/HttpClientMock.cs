@@ -24,7 +24,7 @@ namespace HttpClientMock
                 .Protected()
                 .Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
-                    ItExpr.IsAny<HttpResponseMessage>(),
+                    ItExpr.IsAny<HttpRequestMessage>(),
                     ItExpr.IsAny<CancellationToken>()
                 )
                 .ReturnsAsync(new HttpResponseMessage()
@@ -50,7 +50,7 @@ namespace HttpClientMock
 
             handlerMock
                 .Protected()
-                .Setup<Task<HttpResponseMessage>>(
+                .Setup<Task<HttpRequestMessage>>(
                     "SendAsync",
                     ItExpr.IsAny<HttpResponseMessage>(),
                     ItExpr.IsAny<CancellationToken>()

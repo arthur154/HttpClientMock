@@ -1,18 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Authors>Mitchell Arthur</Authors>
-    <Description>HttpClientMock is a .NET core library that provides a utility to mock HttpClient dependencies in unit test. This utility provides an HttpClient by mocking the underlying HttpMessageHandler dependency.</Description>
-    <PackageProjectUrl />
-    <RepositoryUrl>https://github.com/marthurIntersys/HttpClientMock</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>HttpClientMock</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
+    <PackageProjectUrl>https://github.com/marthurIntersys/HttpClientMock</PackageProjectUrl>
+    <PackageLicenseExpression>https://licenses.nuget.org/MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/marthurIntersys/HttpClientMock</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>.NET standard library that provides a utility to mock HttpClient dependencies in unit test. This utility provides an HttpClient by mocking the underlying HttpMessageHandler dependency.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="Moq" Version="4.11.0" />
   </ItemGroup>
 
 </Project>

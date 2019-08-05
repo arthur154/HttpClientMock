@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.539
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientMock", "HttpClientMock\HttpClientMock.csproj", "{18B7E371-6363-43C4-8B51-392C3EBC7D36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientMock", "HttpClientMock\HttpClientMock.csproj", "{C1533FA6-E40F-4A7B-9EF5-B0F46E61535A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18B7E371-6363-43C4-8B51-392C3EBC7D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18B7E371-6363-43C4-8B51-392C3EBC7D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18B7E371-6363-43C4-8B51-392C3EBC7D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18B7E371-6363-43C4-8B51-392C3EBC7D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1533FA6-E40F-4A7B-9EF5-B0F46E61535A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1533FA6-E40F-4A7B-9EF5-B0F46E61535A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1533FA6-E40F-4A7B-9EF5-B0F46E61535A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1533FA6-E40F-4A7B-9EF5-B0F46E61535A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {354BB345-2443-4B02-82FD-E523655209C6}
+		SolutionGuid = {13BC69C0-D8A1-4724-B374-A05138A41AD3}
 	EndGlobalSection
 EndGlobal

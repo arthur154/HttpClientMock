@@ -6,7 +6,7 @@ namespace HttpClientMock
 {
     public static class MockHttpMessageHandlerExtension
     {
-        public static HttpClient ToHttpClient(this Mock<HttpMessageHandler> mockClient, string mockUrl = "http://blargh")
+        internal static HttpClient ToHttpClient(this Mock<HttpMessageHandler> mockClient, string mockUrl = "http://blargh")
         {
             return new HttpClient(mockClient.Object)
             {

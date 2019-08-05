@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.1.0</Version>
     <PackageProjectUrl>https://github.com/marthurIntersys/HttpClientMock</PackageProjectUrl>
-    <PackageLicenseExpression>https://licenses.nuget.org/MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/marthurIntersys/HttpClientMock</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Description>.NET standard library that provides a utility to mock HttpClient dependencies in unit test. This utility provides an HttpClient by mocking the underlying HttpMessageHandler dependency.</Description>

@@ -24,13 +24,44 @@ namespace ExampleHttpClientMock.Service
 
         public IEnumerable<string> GetValues()
         {
-            var rawValues = _httpClient.GetAsync("https://localhost:44386/api/values").Result.Content.ReadAsStringAsync().Result;
-            return JsonConvert.DeserializeObject<string[]>(rawValues);
+            string rawValues;
+            string[] returnValue;
+
+            try
+            {
+                rawValues = _httpClient.GetAsync("https://localhost:44386/api/values").Result.Content.ReadAsStringAsync().Result;
+            }
+            catch
+            {
+                throw new Exception("Caught exception while calling api/values");
+            }
+
+
+            try
+            {
+                returnValue = JsonConvert.DeserializeObject<string[]>(rawValues);
+            }
+            catch
+            {
+                throw new Exception("Caught exception while parsing result from api/values");
+            }
+
+            return returnValue;
         }
 
         public string GetValue(int id)
         {
-            var rawValue = _httpClient.GetAsync($"https://localhost:44386/api/values/{id}").Result.Content.ReadAsStringAsync().Result;
+            string rawValue;
+
+            try
+            {
+                rawValue = _httpClient.GetAsync($"https://localhost:44386/api/values/{id}").Result.Content.ReadAsStringAsync().Result;
+            }
+            catch
+            {
+                throw new Exception($"Caught exception while calling api/values/{id}");
+            }
+
             return rawValue;
         }
     }

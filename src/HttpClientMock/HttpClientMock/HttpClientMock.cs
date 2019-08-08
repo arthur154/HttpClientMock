@@ -50,9 +50,9 @@ namespace HttpClientMock
 
             handlerMock
                 .Protected()
-                .Setup<Task<HttpRequestMessage>>(
+                .Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
-                    ItExpr.IsAny<HttpResponseMessage>(),
+                    ItExpr.IsAny<HttpRequestMessage>(),
                     ItExpr.IsAny<CancellationToken>()
                 )
                 .ReturnsAsync(() => { throw mockException; })

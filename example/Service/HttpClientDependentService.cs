@@ -33,7 +33,7 @@ namespace ExampleHttpClientMock.Service
             }
             catch
             {
-                throw new Exception("Caught exception while calling api/values");
+                throw new Exception("Caught exception while calling api/values.");
             }
 
 
@@ -43,7 +43,7 @@ namespace ExampleHttpClientMock.Service
             }
             catch
             {
-                throw new Exception("Caught exception while parsing result from api/values");
+                throw new Exception("Caught exception while parsing result from api/values.");
             }
 
             return returnValue;
@@ -59,7 +59,7 @@ namespace ExampleHttpClientMock.Service
             }
             catch
             {
-                throw new Exception($"Caught exception while calling api/values/{id}");
+                throw new Exception($"Caught exception while calling api/values/{id}.");
             }
 
             return rawValue;

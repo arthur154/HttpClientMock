@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using ExampleHttpClientMock.Service;
+using ExampleWebApi.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExampleHttpClientMock.Controllers
+namespace ExampleWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -14,7 +14,7 @@ namespace ExampleHttpClientMock.Controllers
     {
         IHttpClientDependentService _httpClientDependentService;
 
-        public ValuesController (IHttpClientDependentService httpClientDependentService)
+        public ValuesController(IHttpClientDependentService httpClientDependentService)
         {
             _httpClientDependentService = httpClientDependentService;
         }

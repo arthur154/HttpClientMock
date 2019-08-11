@@ -1,6 +1,6 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using HttpClientMock;
-using ExampleHttpClientMock.Service;
+using ExampleWebApi.Service;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System;

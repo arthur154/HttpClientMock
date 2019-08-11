@@ -15,6 +15,7 @@ namespace ExampleWebApi.Service
 
     public class HttpClientDependentService : IHttpClientDependentService
     {
+        private const string LOCAL_BASE_URL = "https://localhost:44390";
         private HttpClient _httpClient;
 
         public HttpClientDependentService(HttpClient httpClient)
@@ -29,7 +30,7 @@ namespace ExampleWebApi.Service
 
             try
             {
-                rawValues = _httpClient.GetAsync("https://localhost:44386/api/values").Result.Content.ReadAsStringAsync().Result;
+                rawValues = _httpClient.GetAsync($"{LOCAL_BASE_URL}/api/values").Result.Content.ReadAsStringAsync().Result;
             }
             catch
             {
@@ -55,7 +56,7 @@ namespace ExampleWebApi.Service
 
             try
             {
-                rawValue = _httpClient.GetAsync($"https://localhost:44386/api/values/{id}").Result.Content.ReadAsStringAsync().Result;
+                rawValue = _httpClient.GetAsync($"{LOCAL_BASE_URL}/api/values/{id}").Result.Content.ReadAsStringAsync().Result;
             }
             catch
             {
